@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Practica de Java Scrip del curso de Platzi</title>
+</head>
+
+<style type="text/css">
+	body{
+
+		background-color: #D8D8D8;
+		color: #0B0B61;
+	}
+</style>
+
+<body>
+<div>	
+<center><h1>Hola mundo</h1></center> 
+</div>
+
+<script type="text/javascript">
+	
+	// var usuario = prompt('¿Cual es tu peso?'); // prompt es como un alert pero se puede ingresar datos en una variable
+	// var peso = parseInt(usuario); // parseInt y parseFloat convierten cadenas a numeros y decimales respectivamente
+	// var tierra = 9.8;
+	// var marte = 3.7;
+	// var jupiter = 24.8;
+	
+	// var peso_final;
+
+	// peso_final = peso * marte / tierra;
+	// peso_final = parseInt(peso_final);
+     
+ //     document.write("<h3><center> Tu peso en marte es </center>  </h3> <h1> <strong> <center>  " + peso_final + " kilos </center>  </strong> </h1> "); // se puede concatenar datos con el signo + ademas de incluir etiquetas HTML en java script dentro de las cadenas de texto.
+	// // alert(peso_final); 
+
+var usuario = prompt('¿Cual es tu peso?'); 
+	var peso = parseInt(usuario); 
+	var planeta = parseInt(prompt('Elige tu planeta. \n 1 es marte 2 es jupiter'));
+	var tierra = 9.8;
+	var marte = 3.7;
+	var jupiter = 24.8;
+	var peso_final;
+	var nombre = ""; // parte de la solucion al problema de poner el nombre del planeta en el resultado
+    
+    if (planeta == 1) {
+
+    	peso_final = peso * marte / tierra;
+    	nombre = 'Marte'; // parte de la solucion al problema de poner el nombre del planeta en el resultado
+
+    }else if (planeta ==2) {
+
+    	peso_final = peso * jupiter / tierra;
+    	nombre = 'Jupiter'; // parte de la solucion al problema de poner el nombre del planeta en el resultado
+    }
+    else
+    	{ 
+    		peso_final =  404;
+    		nombre = 'Kripton';  // parte de la solucion al problema de poner el nombre del planeta en el resultado
+        }  
+
+	
+	peso_final = parseInt(peso_final);
+     
+   document.write("<h3><center> Tu peso en "+ nombre +" es </center>  </h3> <h1> <strong> <center>  " + peso_final + " kilos </center>  </strong> </h1> ");
+
+   // Resolucion 1 al problema de poner el nombre del planeta en el resultado
+
+    // if (planeta == 1) {
+    // 	 document.write("<h3><center> Tu peso en marte es </center>  </h3> <h1> <strong> <center>  " + peso_final + " kilos </center>  </strong> </h1> "); 
+    // } else if (planeta ==2) {
+
+    // 	document.write("<h3><center> Tu peso en jupiter es </center>  </h3> <h1> <strong> <center>  " + peso_final + " kilos </center>  </strong> </h1> "); 
+    // }
+    // else{
+    // 	peso_final = 1000000;
+    
+    // document.write("<h3><center> Error tu peso es </center>  </h3> <h1> <strong> <center>  " + peso_final + " kilos </center>  </strong> </h1> "); 
+
+    // }
+   
+
+
+
+</script>
+
+</body>
+</html>
